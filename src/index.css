@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.app {
+    background-color: #343541;
+    display: flex;
+}
+
+.side-bar{
+    background-color: #202123;
+    height: 100vh;
+    width: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button{
+    border: solid 0.5px rgb(255,255,255,0.5);
+    background-color: transparent;
+    border-radius: 70px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+button:hover{
+    transition: 1s;
+    background-color: #fff;
+    color: #202123;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.info{
+    color: rgba(255,255,255,0.5);
+    font-size:11px;
+    padding: 10px
+}
+
+nav{
+    border-top: solid 0.5px rgb(255,255,255,0.5);
+    padding: 15px;
+    margin: 10px;
+
+}
+
+.history{
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+}
+
+.history li{
+    list-style-type:none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+}
+
+input{
+    font-size:20px;
+    width: 100%;
+    border:none;
+    background-color: rgba(255,255,255,0.05);
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.05) 0 54px 55px,
+        rgba(0,0,0,0.05) 0 -12px 32px,
+        rgba(0,0,0,0.05) 0 4px 6px,
+        rgba(0,0,0,0.05) 0 12px 3px;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+#submit{
+    position: absolute;
+    bottom: 13px;
+    cursor: pointer;
+    right: 0;
+}
+
+.bottom-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed {
+    overflow: scroll;
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.feed li {
+    display: flex;
+    background-color: #444654;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.feed p{
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    text-align: left;
+
+}
+
+.feed p.role{
+    min-width: 100px;
+}
+
+.feed .role.user {
+    background-image: url("isafinal.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 21px;
+}
+.feed .role.assistant {
+    background-image: url('robo.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
