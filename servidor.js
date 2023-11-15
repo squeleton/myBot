@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const API_KEY = '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'
+const API_KEY = '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';
 
 app.post('/completions', async (req, res) => {
     const options = {
@@ -16,7 +16,10 @@ app.post('/completions', async (req, res) => {
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: req.body.message}],
+            messages: [
+                {role:"user", content: "A partir de ahora eres mi asistente personal, mi nombre es isaias, soy un emprendedor y coah"},
+                {role:"system", content: "Gracias por la informacion isaias"},
+                {role: "user", content: req.body.message}],
             max_tokens: 100,
         })
     };
